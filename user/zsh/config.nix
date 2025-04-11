@@ -1,6 +1,7 @@
 {pkgs, config, ...}:
 
 {
+  home.shell.enableZshIntegration = true;
   programs.zsh = {
     enable = true;
     enableCompletion = true;

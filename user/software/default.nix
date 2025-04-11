@@ -7,6 +7,7 @@
     ./rice.nix
     ./eza.nix
     ./cava.nix
+    ./git.nix
     ./xdg.nix
   ];
 }

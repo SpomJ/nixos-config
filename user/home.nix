@@ -7,7 +7,6 @@
     ./software
     ./waybar
     ./foot
-    ./bash
     ./zsh
   ];
   
