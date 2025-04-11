@@ -1,0 +1,155 @@
+@import "catppuccin.css";
+
+label.module {
+    box-shadow: inset 0 -1px;
+}
+
+label.module {
+    padding: 0 5px;
+}
+
+#tray window, tooltip {
+    background-color: @crust;
+    border: solid 1px @mauve;
+}
+
+
+/**:hover {
+    background-color: @red;
+}*/
+
+* {
+    all: unset;
+    /*font-family: "Jetbrains Mono NerdFont Mono", "Font Awesome 5 Free";*/
+    font-family: "Cozette", "Jetbrains Mono NerdFont Mono";
+    font-size: 14px;
+    color: @text;
+}
+
+
+#workspaces {
+    padding: 0;
+}
+
+#workspaces button label {
+    color: @text;
+    transition: 250ms ease;
+}
+
+#workspaces button {
+    color: @blue;
+    box-shadow: 0 0;
+    min-width: 20px;
+    transition: 200ms ease;
+}
+
+#workspaces button:hover {
+    background-color: @surface1;
+}
+
+#workspaces button.active {
+    background-color: @surface0;
+    box-shadow: inset 0 -1px;
+}
+
+#workspaces button.empty label {
+    color: @overlay0;
+}
+
+#taskbar {
+    color: @mauve;
+}
+
+#taskbar button {
+    color: @mauve;
+    padding-left: 3px;
+    min-width: 17px;
+}
+
+#taskbar button:hover {
+    background-color: @surface1;
+}
+
+#taskbar button.active {
+    background-color: @surface0;
+}
+window#waybar {
+    background-color: @base;
+}
+
+#mpris {
+    color: @mauve;
+}
+
+#wireplumber {
+    color: @red;
+}
+
+#network {
+    color: @maroon;
+}
+
+#bluetooth {
+    color: @maroon;
+}
+
+#cpu {
+    color: @peach;
+}
+
+#memory {
+    color: @yellow;
+}
+
+#temperature {
+    color: @green;
+}
+
+#backlight {
+    color: @teal;
+}
+
+#battery {
+    color: @lavender;
+}
+
+#battery.full, #battery.sufficient {
+    /* same */
+}
+
+#battery.charging:not(.sufficient) {
+    color: @green;
+}
+
+#clock {
+    color: @blue;
+}
+
+#tray {
+}
+
+#tray window menuitem {
+    padding: 1px 0 0 0;
+    margin: 0 5px;
+}
+
+#tray window menuitem:hover {
+    background: @surface0;
+}
+
+#tray window menu {
+    padding: 5px 0 4px 0;
+}
+
+#custom-distroicon {
+    font-family: "Jetbrains Mono NerdFont";
+    background: @mauve;
+    color: @base;
+    padding: 0;
+    padding-right: 4px;
+    min-width: 16px; /* should be 20 but isnt cuz of the above shenanigans*/
+}
+
+#language {
+    color: @sky;
+}

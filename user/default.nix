@@ -1,0 +1,7 @@
+{config, ...}:
+
+{
+  imports = [
+    ./user.nix
+  ];
+}
