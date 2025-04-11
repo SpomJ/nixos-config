@@ -8,6 +8,7 @@
     ./waybar
     ./foot
     ./bash
+    ./zsh
   ];
   
   home = {

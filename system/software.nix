@@ -19,6 +19,15 @@ in
   networking.nameservers = ["1.1.1.1"];
 
   programs = {
+    zsh = {
+      enable = true;
+      enableBashCompletion = true;
+      enableCompletion = true;
+      autosuggestions = {
+        enable = true;
+        async = true;
+      };
+    };
     hyprland = {
       enable = true;
       withUWSM = true;
