@@ -1,5 +1,11 @@
 {pkgs, config, ...}:
 
+let
+  zapret_yt_tls = pkgs.fetchurl {
+    url = "https://github.com/bol-van/zapret/raw/refs/heads/master/files/fake/tls_clienthello_www_google_com.bin";
+    sha256 = "0p172hxcfsf5knap4wdimp8vqgsbhg6cnbbb88yam07v9kp2nv4k";
+  };
+in
 {
   environment.systemPackages = with pkgs; [
     vim
@@ -52,7 +58,7 @@
         "--dpi-desync-ttl=7"
         "--dpi-desync-fooling=badseq,md5sig"
         "--dpi-desync-repeats=16"
-#        "--dpi-desync-fake-tls=/etc/nixos/tls_clienthello_www_google_com.bin"
+        "--dpi-desync-fake-tls=${zapret_yt_tls}"
         "--dpi-desync-split-pos=2,midsld"
       ];
     };
