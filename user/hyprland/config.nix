@@ -9,7 +9,11 @@
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {
-      exec-once = ["hyprpaper & mako & foot --server"];
+      exec-once = map (x: "uwsm app -- ${x}") [
+        "hyprpaper"
+        "mako"
+        "foot --server"
+      ];
       general.layout = "dwindle";
       gestures.workspace_swipe = true;
       "$mod" = "SUPER";
