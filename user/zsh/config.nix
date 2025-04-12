@@ -8,7 +8,7 @@
     autocd = true;
     autosuggestion = {
       enable = true;
-      strategy = ["history"];
+      strategy = ["history" "completion"];
     };
     dotDir = ".config/zsh";
     history = {

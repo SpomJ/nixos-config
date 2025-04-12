@@ -8,6 +8,7 @@
     ./waybar
     ./foot
     ./zsh
+    ./files.nix
   ];
   
   home = {

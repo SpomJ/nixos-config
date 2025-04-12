@@ -1,6 +1,9 @@
 {pkgs, config, ...}:
 
 {
+  imports = [
+    ./rose-pine-dawn.nix
+  ];
   programs.foot = {
     enable = true;
     server.enable = true;

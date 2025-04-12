@@ -2,6 +2,7 @@
 
 {
   catppuccin = {
+    cache.enable = true;
     flavor = "mocha";
     
     waybar.enable = true;
@@ -10,7 +11,10 @@
     cursors.enable = true;
     cursors.accent = "dark";
 
-    foot.enable = true;
+    bat.enable = true;
+    cava.enable = true;
+    #foot.enable = true;
     hyprland.enable = true;
+    zsh-syntax-highlighting.enable = true;
   };
 }
