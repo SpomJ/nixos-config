@@ -16,6 +16,9 @@
     mpv
     telegram-desktop
     vesktop
+    qbittorrent
   ];
   programs.firefox.enable = true;
+  programs.fastfetch.enable = true;
+  programs.btop.enable = true;
 }

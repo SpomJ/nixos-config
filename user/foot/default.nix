@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./rose-pine-dawn.nix
+    #./rose-pine-dawn.nix
   ];
   programs.foot = {
     enable = true;
@@ -10,7 +10,7 @@
     settings = {
       main.font = "Cozette";
       colors = {
-        alpha = 0.7;
+        alpha = 0.9;
 #        foreground="cdd6f4";
 #        background="1e1e2e";
 #

@@ -38,7 +38,9 @@ in
       dedicatedServer.openFirewall = true;
       localNetworkGameTransfers.openFirewall = true;
     };
+    obs-studio.enable = true;
   };
+
 
   security.rtkit.enable = true;
   services = {

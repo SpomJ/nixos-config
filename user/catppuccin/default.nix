@@ -12,8 +12,9 @@
     cursors.accent = "dark";
 
     bat.enable = true;
+    btop.enable = true;
     cava.enable = true;
-    #foot.enable = true;
+    foot.enable = true;
     hyprland.enable = true;
     zsh-syntax-highlighting.enable = true;
   };
