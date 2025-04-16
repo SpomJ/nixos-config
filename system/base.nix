@@ -27,7 +27,7 @@
   #};
 
   programs.nix-ld.enable = true;
-  #programs.nix-ld.libraries = with pkgs;[]
+  programs.nix-ld.libraries = with pkgs;[];
 
   boot.loader = {
     systemd-boot.enable = true;

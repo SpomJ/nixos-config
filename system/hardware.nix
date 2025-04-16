@@ -34,7 +34,9 @@
     };
   };
 
-  swapDevices = [ ];
+  swapDevices = [ {
+    device = "/dev/disk/by-uuid/01d96d17-0e86-40b7-b64a-d843f3f970d5";
+  } ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
@@ -50,4 +52,16 @@
     enable = true;
     powerOnBoot = true;
   };
+  services.thermald.enable = true;
+  services.power-profiles-daemon.enable = true;
+  #services.auto-cpufreq.settings = {
+  #  battery = {
+  #   governor = "powersave";
+  #   turbo = "never";
+  #  };
+  #  charger = {
+  #   governor = "performance";
+  #   turbo = "auto";
+  #  };
+  #};
 }

@@ -27,6 +27,7 @@
         "workspace 4, class:(org.telegram.desktop)"
 
         "renderunfocused, title:(Oxygen Not Included)"
+        "renderunfocused, class:(OxygenNotIncluded)"
       ];
     };
   };
