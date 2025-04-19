@@ -5,12 +5,12 @@
 
   systemd.user.tmpfiles.rules = [
     #T Path                                     Mod User Group Age Arg
-    "d ${config.home.homeDirectory}/tmp         -   -    -     ~1d -"
-    "d ${config.home.homeDirectory}/tmp/dl      -   -    -     -   -"
-    "d ${config.home.homeDirectory}/tmp/dsk     -   -    -     -   -"
-    "d ${config.home.homeDirectory}/tmp/publ    -   -    -     -   -"
-    "d ${config.home.homeDirectory}/tmp/tmpl    -   -    -     -   -"
-    "d ${config.home.homeDirectory}/tmp/misc    -   -    -     -   -"
+    "d ${config.home.homeDirectory}/tmp         -   -    -     1d  -"
+    "d ${config.home.homeDirectory}/tmp/dl      -   -    -     1d  -"
+    "d ${config.home.homeDirectory}/tmp/dsk     -   -    -     1d  -"
+    "d ${config.home.homeDirectory}/tmp/publ    -   -    -     1d  -"
+    "d ${config.home.homeDirectory}/tmp/tmpl    -   -    -     1d  -"
+    "d ${config.home.homeDirectory}/tmp/misc    -   -    -     1d  -"
   ];
   
   xdg = {
