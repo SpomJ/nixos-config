@@ -1,4 +1,4 @@
-{pkgs, config, ...}:
+{inputs, pkgs, config, ...}:
 
 let
   zapret_yt_tls = pkgs.fetchurl {
@@ -31,6 +31,8 @@ in
     hyprland = {
       enable = true;
       withUWSM = true;
+      package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+      portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
     };
     steam = {
       enable = true;
