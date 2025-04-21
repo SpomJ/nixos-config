@@ -74,6 +74,15 @@ in
         "--dpi-desync-fake-tls=${zapret_yt_tls}"
         "--dpi-desync-split-pos=2,midsld"
       ];
+      whitelist = [
+        "youtube.com"
+        "googlevideo.com"
+        "ytimg.com"
+        "youtu.be"
+        "discord.com"
+        "discord.gg"
+        "rutracker.org"
+      ];
     };
   };
 }
