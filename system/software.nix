@@ -17,6 +17,7 @@ in
   ];
 
   networking.nameservers = ["1.1.1.1"];
+  networking.dhcpcd.extraConfig = '' nohook resolv.conf '';
 
   programs = {
     zsh = {
@@ -75,13 +76,20 @@ in
         "--dpi-desync-split-pos=2,midsld"
       ];
       whitelist = [
+        # Youtube
         "youtube.com"
         "googlevideo.com"
         "ytimg.com"
         "youtu.be"
+        # Discord
         "discord.com"
         "discord.gg"
+        "discordapp.com"
+        "discordapp.net"
+        "discord-attachments-uploads-prd.storage.googleapis.com"
+        # Misc
         "rutracker.org"
+        "proton.me"
       ];
     };
   };
