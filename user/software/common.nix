@@ -13,6 +13,8 @@
     wineWowPackages.staging
     xdg-utils
 
+    appimage-run
+
     mpv
     telegram-desktop
     vesktop
