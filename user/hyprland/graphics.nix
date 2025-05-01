@@ -3,8 +3,8 @@
 {
   wayland.windowManager.hyprland.settings = {
     general = {
-      gaps_in = 8;
-      gaps_out = 16;
+      gaps_in = 2;
+      gaps_out = 4;
       border_size = 1;
       "col.active_border" = "$mauve $blue";
       "col.inactive_border" = "$surface0";
