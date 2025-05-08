@@ -44,6 +44,7 @@ in
     obs-studio.enable = true;
   };
 
+  hardware.graphics.enable32Bit = true;  # to be used for wine
 
   security.rtkit.enable = true;
   services = {

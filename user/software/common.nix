@@ -10,7 +10,7 @@
     eza
     btop
     wl-clipboard
-    wineWowPackages.staging
+    wineWowPackages.unstableFull
     xdg-utils
 
     appimage-run

@@ -40,6 +40,8 @@
   networking.networkmanager.enable = true;
   security.rtkit.enable = true;
 
+  services.dbus.implementation = "broker";
+
   time.timeZone = "Europe/Moscow";
 
   i18n.defaultLocale = "C.UTF-8";
