@@ -10,10 +10,7 @@
     eza
     btop
     wl-clipboard
-    wineWowPackages.unstableFull
     xdg-utils
-
-    appimage-run
 
     mpv
     telegram-desktop

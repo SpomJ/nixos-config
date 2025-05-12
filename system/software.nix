@@ -14,6 +14,8 @@ in
     light
     git
     greetd.tuigreet
+    wineWowPackages.unstableFull
+    appimage-run
   ];
 
   networking.nameservers = ["1.1.1.1"];
@@ -76,22 +78,42 @@ in
         "--dpi-desync-fake-tls=${zapret_yt_tls}"
         "--dpi-desync-split-pos=2,midsld"
       ];
-      whitelist = [
-        # Youtube
-        "youtube.com"
-        "googlevideo.com"
-        "ytimg.com"
-        "youtu.be"
-        # Discord
-        "discord.com"
-        "discord.gg"
-        "discordapp.com"
-        "discordapp.net"
-        "discord-attachments-uploads-prd.storage.googleapis.com"
-        # Misc
-        "rutracker.org"
-        "proton.me"
-      ];
+#      whitelist = [
+#        # Youtube
+#        "youtube.com"
+#        "googlevideo.com"
+#        "ytimg.com"
+#        "youtu.be"
+#        # Discord
+#        "discord.com"
+#        "discord.gg"
+#        "discordapp.com"
+#        "discordapp.net"
+#        "discord-attachments-uploads-prd.storage.googleapis.com"
+#        # Misc
+#        "rutracker.org"
+#        "proton.me"
+#      ];
+    };
+  };
+
+  # Run several filetypes with ./
+  boot.binfmt.registrations = {
+    appimage = {
+      wrapInterpreterInShell = false;
+      interpreter = "${pkgs.appimage-run}/bin/appimage-run";
+      recognitionType = "magic";
+      offset = 0;
+      mask = ''\xff\xff\xff\xff\x00\x00\x00\x00\xff\xff\xff'';
+      magicOrExtension = ''\x7fELF....AI\x02'';
+    };
+    wine = {
+      wrapInterpreterInShell = false;
+      interpreter = "${pkgs.wineWowPackages.unstableFull}/bin/wine";
+      recognitionType = "magic";
+      offset = 0;
+      mask = ''\xff\xff'';
+      magicOrExtension = ''MZ'';
     };
   };
 }
