@@ -52,7 +52,7 @@
     enable = true;
     powerOnBoot = true;
   };
-  services.thermald.enable = true;
+  #services.thermald.enable = true;
   services.power-profiles-daemon.enable = true;
   #services.auto-cpufreq.settings = {
   #  battery = {
