@@ -7,11 +7,15 @@ let
   };
 in
 {
+  nixpkgs.config.permittedInsecurePackages = [ "olm-3.2.16" ];  # needed for neochat
   environment.systemPackages = with pkgs; [
     vim
     kakoune
+    comma
+    file
     wget
     light
+    nh
     git
     greetd.tuigreet
     wineWowPackages.unstableFull
