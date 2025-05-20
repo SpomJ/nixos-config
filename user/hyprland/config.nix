@@ -20,6 +20,8 @@
       windowrulev2 = [
         "tag +popup, class:(gcr-prompter)"
         "tag +popup, class:(xdg-desktop-portal-gtk)"
+        "tag +popup, title:(KeePassXC -  Access Request)"
+        "tag +popup, title:(Unlock Database - KeePassXC)"
         "float, tag:popup"
         "dimaround, tag:popup"
 
@@ -29,6 +31,7 @@
         "renderunfocused, title:(Oxygen Not Included)"
         "renderunfocused, class:(OxygenNotIncluded)"
       ];
+      misc.enable_anr_dialog = false;
     };
   };
 }
